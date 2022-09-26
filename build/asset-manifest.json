@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1049dc3a.css",
+    "main.js": "/static/js/main.2a258cab.js",
+    "static/media/HDwallpaper_node_js,JavaScript,hexagon,abstract,studioshot,blackbackground.jpg": "/static/media/HDwallpaper_node_js,JavaScript,hexagon,abstract,studioshot,blackbackground.e5eb4e6a99bbb7ad7043.jpg",
+    "static/media/5Node_js_ExpressTutorialstoGoFromBeginnertoExpert.jpg": "/static/media/5Node_js_ExpressTutorialstoGoFromBeginnertoExpert.6e523cafd5b4dab152f9.jpg",
+    "static/media/collab.jpg": "/static/media/collab.a844aaa36913d99e966e.jpg",
+    "static/media/XDXD.jpg": "/static/media/XDXD.bb3839c5918b617d23c8.jpg",
+    "static/media/photo_2022-09-24_18-35-18.jpg": "/static/media/photo_2022-09-24_18-35-18.8d9fd0f4ec53521bb3f1.jpg",
+    "static/media/Cujae.jpg": "/static/media/Cujae.c3b5573fc733b5f7b5a0.jpg",
+    "static/media/getty.jpg": "/static/media/getty.f5c57c383c2292b233e3.jpg",
+    "static/media/SavvyApps.jpg": "/static/media/SavvyApps.8b2766b9da4fca89cc66.jpg",
+    "static/media/jpg": "/static/media/18c75045489c1c6995d337db8025abcd.a5cbc2470afcd1c4e12c.jpg",
+    "static/media/sass.jpg": "/static/media/sass.f6d4275857e75374c3d2.jpg",
+    "index.html": "/index.html",
+    "main.1049dc3a.css.map": "/static/css/main.1049dc3a.css.map",
+    "main.2a258cab.js.map": "/static/js/main.2a258cab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1049dc3a.css",
+    "static/js/main.2a258cab.js"
+  ]
+}
