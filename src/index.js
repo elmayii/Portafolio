@@ -145,7 +145,7 @@ const QuickNav = () => {
 const text = () =>{
     return(
         <div className='descrip'>
-            <p>Actually I'm a studying Software Engineer on CUJAE(technology's Institute of Habana,Cuba), but I am a self-taught person and passionate by learning by myself technology's like JavaScript, React,Node and Vue.js. I'm very excited to get my first Job as Front-end Developer, so I'm ready for any challenges and start on the professional world of web development as a Junior but I hope to learn more about this profession and recollect experience. I'm a person who prefer the team work for my cohesion skills, I'm a programmer very adaptable to resolve any situation for the team.</p>
+            <p>At now I'm studying Software Engineer on CUJAE(technology's Institute of Havana,Cuba), but I am a self-taught person and passionate by learning by myself technologys like JavaScript, React,Node and Vue.js. I'm very excited to get my first Job as Front-end Developer, so I'm ready for any challenges and start on the professional world of web development as a Junior but I hope to learn more about this profession and recollect experience. I'm a person who prefers the team work for my cohesion skills, I'm a programmer very adaptable to resolve any situation for the team.</p>
         </div>
     )
 }
