@@ -4,7 +4,7 @@ import './index.css';
 import image from './Img/photo_2022-09-24_18-35-18.jpg'
 import Vimage from './Img/SavvyApps.jpg'
 import Eximage from './Img/5Node_js_ExpressTutorialstoGoFromBeginnertoExpert.jpg'
-import nimage from './Img/HDwallpaper_node_js,JavaScript,hexagon,abstract,studioshot,blackbackground.jpg'
+import nimage from './Img/F0vJji6XoAAYUGl.jpg'
 import Cyimage from './Img/XDXD.jpg'
 import Github from './Img/2cb670b6ddd8922a1c1b2fee4f6f758c.jpg'
 import Linked from './Img/18c75045489c1c6995d337db8025abcd.jpg'
@@ -14,6 +14,7 @@ import cujae from './Img/Cujae.jpg'
 import java from './Img/images.png'
 import dieta from './Img/getty.jpg'
 import team from './Img/collab.jpg'
+import next from './Img/download.jpg'
 
 var UserStatus;
 (function (UserStatus) {
@@ -117,23 +118,30 @@ const QuickNav = () => {
         return [{
                 id: 1,
                 label: "React.js"
-            }, {
+            },
+            {
                 id: 2,
-                label: "Vue.js"
-            }, {
+                label: "NEXTjs"
+            },
+            {
                 id: 3,
                 label: "Javascript"
             },
             {
                 id: 4,
                 label: "Express.js"
-            }, 
+            },
             {
                 id: 5,
-                label: "Cypress"
-            },{
+                label: "Vue.js"
+            },
+            {
                 id: 6,
                 label: "Node.js"
+            },
+            {
+                id: 7,
+                label: "Cypress"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("span", { className: "quick-nav-item-label" }, item.label)));
@@ -160,13 +168,15 @@ const Tools = () => {
                 id: 1,
                 image: Github,
                 label: "Github",
-                name: "elmayii"
+                name: "elmayii",
+                href:'https://github.com/elmayii'
             }, {
                 icon: "fa fa-linkedin",
                 id: 2,
                 image: Linked,
                 label: "Linkedin",
-                name: "Mario Perera"
+                name: "Mario Perera",
+                href:'https://www.linkedin.com/in/mario-perera-b30921237'
             }, {
                 icon: "fa-solid fa-piggy-bank",
                 id: 3,
@@ -178,18 +188,20 @@ const Tools = () => {
                 id: 4,
                 image: codepen,
                 label: "Codepen",
-                name: "elmayii"
+                name: "elmayii",
+                href:'https://codepen.io/elmayii'
             }].map((tool) => {
             const styles = {
                 backgroundImage: `url(${tool.image})`
             };
             return (React.createElement("div", { key: tool.id, className: "tool-card" },
                 React.createElement("div", { className: "tool-card-background background-image", style: styles }),
+                React.createElement("a", {href:tool.href},
                 React.createElement("div", { className: "tool-card-content" },
                     React.createElement("div", { className: "tool-card-content-header" },
                         React.createElement("span", { className: "tool-card-label" }, tool.label),
                         React.createElement("span", { className: "tool-card-name" }, tool.name)),
-                    React.createElement("i", { className: (`${tool.icon} tool-card-icon`) }))));
+                    React.createElement("i", { className: (`${tool.icon} tool-card-icon`) })))));
         });
     };
     return (React.createElement(MenuSection, { icon: "fa fa-user", id: "tools-section", title: "Counts, follow me!!" }, getTools()));
@@ -220,11 +232,13 @@ const Restaurants = () => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
             };
-            return (React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
+            return (
+                React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
+
                 React.createElement("div", { className: "restaurant-card-content" },
                     React.createElement("div", { className: "restaurant-card-content-items" },
                         React.createElement("span", { className: "restaurant-card-title" }, restaurant.title),
-                        React.createElement("span", { className: "restaurant-card-desc" }, restaurant.desc)))));
+                        React.createElement("span",{ className: "restaurant-card-desc"}, restaurant.desc)))));
         });
     };
     return (React.createElement(MenuSection, { icon: "fa-regular fa-pot-food", id: "restaurants-section", title: "About me" }, getRestaurants()));
@@ -237,13 +251,15 @@ const Movies = () => {
                 icon: "fa-solid fa-atom",
                 image: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
                 title: "React.js"
-            }, {
-                desc: "I can develop using it, it's the future",
+            },
+            {
+                desc: "I have been develop some web apps using NEXTjs",
                 id: 2,
-                icon: "fa fa-hand-spock-o",
-                image: Vimage,
-                title: "Vue.js"
-            }, {
+                icon: "fa fa-cube",
+                image: next,
+                title: "NEXTjs"
+            },
+            {
                 desc: "My base languaje ",
                 id: 3,
                 icon: "fa fa-chrome",
@@ -251,22 +267,29 @@ const Movies = () => {
                 title: "Javascript"
             }, 
             {
-                desc: "I have been develop Apis-backend using it with node.js",
+                desc: "I have been develop some API-REST using it with node.js",
                 id: 4,
                 icon: "fa fa-terminal",
                 image: Eximage,
                 title: "Express.js"
             },
             {
-                desc: "Same story of express.js",
+                desc: "I have developed some school projects using Spring boot",
                 id: 5,
-                icon: "fa fa-cube",
+                icon: "fa fa-leaf",
                 image: nimage,
-                title: "Node.js"
+                title: "Spring Boot"
+            },
+            {
+                desc: "I can develop using it, it's the future",
+                id: 6,
+                icon: "fa fa-hand-spock-o",
+                image: Vimage,
+                title: "Vue.js"
             },
             {
                 desc: "my testing librery",
-                id: 6,
+                id: 7,
                 icon: "fa fa-diamond",
                 image: Cyimage,
                 title: "Cypress"
