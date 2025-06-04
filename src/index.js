@@ -104,7 +104,7 @@ const MenuSection = (props) => {
 
 const MenuSection2 = (props) => {
     const getContent = () => {
-        return (React.createElement(text));
+        return (React.createElement("div", { className: "menu-section-content" }, props.children));
     };
     return (React.createElement("div", { id: props.id, className: "menu-section" },
         React.createElement("div", { className: "menu-section-title" },
@@ -150,7 +150,7 @@ const QuickNav = () => {
     return (React.createElement(ScrollableComponent, { id: "quick-nav" }, getItems()));
 };
 
-const text = () =>{
+const Description = () =>{
     return(
         <div className='descrip'>
             <p>At now I'm studying Software Engineer on CUJAE(technology's Institute of Havana,Cuba), but I am a self-taught person and passionate by learning by myself technologys like JavaScript, React,Node and Vue.js. I'm very excited to get my first Job as Front-end Developer, so I'm ready for any challenges and start on the professional world of web development as a Junior but I hope to learn more about this profession and recollect experience. I'm a person who prefers the team work for my cohesion skills, I'm a programmer very adaptable to resolve any situation for the team.</p>
@@ -159,7 +159,8 @@ const text = () =>{
 }
 
 const Weather = () => {
-    return (React.createElement(MenuSection2, { icon: "fa-solid fa-sun", id: "weather-section", scrollable: true, title: "little description"},text));
+    return (React.createElement(MenuSection2, { icon: "fa-solid fa-sun", id: "weather-section", scrollable: true, title: "little description" },
+        React.createElement(Description, null)));
 };
 const Tools = () => {
     const getTools = () => {
@@ -318,17 +319,17 @@ const UserStatusButton = (props) => {
         React.createElement("i", { className: props.icon })));
 };
 
-const profilePhoto= () =>{
-    return(
-        <div class="profile">
-      <div class="profile-content">
-        <div class="profile-pic">
-          <img class="profile-pic-image" src={image} />
+const ProfilePhoto = () => {
+    return (
+        <div className="profile">
+            <div className="profile-content">
+                <div className="profile-pic">
+                    <img className="profile-pic-image" src={image} />
+                </div>
+                <h3 className="profile-name">Mario Perera Valdes</h3>
+            </div>
         </div>
-        <h3 class="profile-name">Mario Perera Valdes</h3>
-      </div>
-    </div>
-    )
+    );
 }
 
 const Menu = () => {
@@ -337,7 +338,7 @@ const Menu = () => {
             React.createElement("div", { id: "app-menu-content" },
                 React.createElement("div", { id: "app-menu-content-header" },
                     React.createElement("div", { className: "app-menu-content-header-section" },
-                    React.createElement(profilePhoto),
+                    React.createElement(ProfilePhoto, null),
                         React.createElement(Reminder, null))),
                 React.createElement(QuickNav, null),
                 React.createElement(Weather, null),
